@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <div class="container">
+    <div class="navbar">
+        <h1>DojoWeather</h1>
+        
+            <ol class="nav-links">
+            <li class="nav-item" onclick="message()">Burbank</li>
+            <li class="nav-item" onclick="message()">Chicago</li>
+            <li class="nav-item" onclick="message()">Dalas</li>
+        </ol>
+
+    </div>
+    
+    
+    
+        <div class="header">
+            <h1>San Jose</h1>
+            <div class="header-item"><span>show temperature in </span>
+                <select name="selecttemp" id="selecttemp" onchange="temp(this)">
+                    <option value="celcius">°C</option>
+                    <option value="far">°F</option>
+                </select></div>
+            
+        </div>
+        <div class="content">
+            <div class="content-item">
+                <h1>Today</h1>
+                <img src="/assets/some_rain.png" alt="">
+                <h4>some rain</h4>
+                <div class="grades">
+                    <span class="blue" id="todaymax" >24°</span>  
+                    <span class="red" id="todaymin" >18°</span>  
+                </div>
+            </div>
+            <div class="content-item">
+                <h1>Tomorrow</h1>
+                <img src="/assets/some_sun.png" alt="">
+                <h4>some sun</h4>
+                <div class="grades">
+                    <span class="blue" id="tomorrowmax" >27°</span>  
+                    <span class="red" id="tomorrowmin">19°</span>  
+                </div>
+            </div>
+            <div class="content-item">
+                <h1>Friday</h1>
+                <img src="/assets/some_clouds.png" alt="">
+                <h4>some clouds</h4>
+                <div class="grades">
+                    <span class="blue" id="fridaymax">21°</span>  
+                    <span class="red" id="fridaymin">16°</span>  
+                </div>
+            </div>
+            <div class="content-item">
+                <h1>Saturday</h1>
+                <img src="/assets/some_sun.png" alt="">
+                <h4>some clouds</h4>
+                <div class="grades">
+                    <span class="blue" id="saturdaymax" >26°</span>  
+                    <span class="red" id="saturdaymin">21°</span> 
+                </div>
+            </div>
+        </div>
+        <div class="cookie" id="cookie" name="cookie">
+         <img src="/assets/cookie.png" alt=""/>
+            <div class="message"><h1>Stop! Cookie time</h1>
+            <span>we use cookies (sadly not the editable ones) to personalize content and ads, to provide social media feature and to analyse our traffic. 
+                <a href="http://">Read more...</a></div>
+                <div class="buttonaccept"><button class="iaccept" name="iaccept" id="iaccept" onclick="cookieOk()">I Accept</button></div>
+            </span>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
